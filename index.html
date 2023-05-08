@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- ... -->
+        <script src="wavesurfer.js"></script>
+        
+    </head>
+    <div id="waveform"></div>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<head>
+    <!-- ... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+
+<body>
+    <!-- Add your HTML elements here -->
+    <input type="file" id="audio-upload" accept="audio/*">
+    <canvas id="visualization-canvas"></canvas>
+    <button id="start-btn">Start Visualization</button>
+
+        <button id="stop-btn">Stop Visualization</button>
+        
+        <button id="pause-btn">Pause Visualization</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div id="visualization-canvas"></div>
+<head>
+    <!-- ... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ccapture.js/1.1.8/CCapture.min.js"></script>
+</head>
+<button id="export-btn">Export Video</button>
+<div id="customization-options">
+    <label for="visualization-style">Visualization Style:</label>
+    <select id="visualization-style">
+        <option value="bars">Bars</option>
+        <option value="circles">Circles</option>
+    </select>
+
+    <label for="bar-width">Bar Width:</label>
+    <input type="range" id="bar-width" min="1" max="20" value="10" />
+
+    <label for="hue-range">Hue Range:</label>
+    <input type="range" id="hue-range" min="0" max="360" value="360" />
+</div>
+<div id="customization-options">
+    <!-- Existing customization options -->
+    <!-- Add this inside your customization-options div -->
+<label for="circle-size">Circle Size:</label>
+<input type="range" id="circle-size" min="5" max="50" value="10" />
+
+    <label for="bg-color">Background Color:</label>
+    <input type="color" id="bg-color" value="#000000" />
+
+    <label for="animation-speed">Animation Speed:</label>
+    <input type="range" id="animation-speed" min="1" max="60" value="30" />
+
+    <label for="color-palette">Color Palette:</label>
+    <select id="color-palette">
+        <option value="rainbow">Rainbow</option>
+        <option value="warm">Warm</option>
+        <option value="cool">Cool</option>
+    </select>
+</div>
+<div id="settings-options">
+    <button id="save-settings">Save Settings</button>
+    <button id="load-settings">Load Settings</button>
+    <input type="file" id="settings-file" style="display: none;" />
+</div>
